@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Tomorrow Premium Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="preloader"><div class="loader-content"><div class="loader-logo">TOMORROW</div></div></div>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+                <div class="logo"><a href="/">TOMORROW</a></div>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="collections">Collections</a></li>
+                    <li><a href="products" class="active">Shop</a></li>
+                    <li><a href="lookbook">Lookbook</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="far fa-user"></i></a>
+                    <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="close-menu"><i class="fas fa-times"></i></div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="collections">Collections</a></li>
+            <li><a href="products">Shop</a></li>
+            <li><a href="lookbook">Lookbook</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="page-header" style="background: var(--beige); padding: 150px 0 100px; text-align: center;">
+        <div class="container">
+            <h1 class="reveal">The Shop</h1>
+            <p class="reveal" style="margin-top: 20px;">Premium Western Wear & Statement Outfits</p>
+        </div>
+    </section>
+
+    <section class="shop-section">
+        <div class="container">
+            <div id="product-grid" class="product-grid">
+                <!-- Products will be rendered by products.js -->
+            </div>
+            
+            <!-- Additional Products List from Instructions -->
+            <div style="margin-top: 80px;" class="reveal">
+                <h2 style="text-align: center; margin-bottom: 40px;">Exclusive Pieces</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/product-6.jpg" alt="Designer Rhinestoned Dress"></div>
+                        <div class="product-info">
+                            <h3>Designer Rhinestoned Dress</h3>
+                            <span class="price">Price on Request</span>
+                            <button class="btn btn-dark" onclick="enquireWhatsApp('Designer Rhinestoned Dress')">Enquire on WhatsApp</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/lookbook-2.jpg" alt="Printed Dress"></div>
+                        <div class="product-info">
+                            <h3>Printed Dress</h3>
+                            <span class="price">Price on Request</span>
+                            <button class="btn btn-dark" onclick="enquireWhatsApp('Printed Dress')">Enquire on WhatsApp</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="assets/images/lookbook-4.jpg" alt="Black Halter Dress"></div>
+                        <div class="product-info">
+                            <h3>Black Halter Dress</h3>
+                            <span class="price">Price on Request</span>
+                            <button class="btn btn-dark" onclick="enquireWhatsApp('Black Halter Dress')">Enquire on WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 20px;">TOMORROW</div>
+                    <p>Premium boutique in Chennai curating international fashion for women and kids.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="collections">Collections</a></li>
+                        <li><a href="products">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="contact">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Visit Us</h4>
+                    <p>Tomorrow, 105, Harrington Rd,<br>Chetpet, Chennai, TN 600031</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tomorrow Premium Fashion. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919884766502" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <script src="js/script.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
